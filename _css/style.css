@@ -1,0 +1,204 @@
+/* @override 
+	http://lhli.net/lightcycle3D/_css/style.css */
+
+html {
+	-webkit-font-smoothing: antialiased;
+	background-color: #000;
+	font: 14px / 21px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: white;
+	overflow: hidden;
+}
+
+body {
+	background-color: #000;
+}
+
+header {
+	height: 55px;
+	background: url(../_images/headerbg.png) no-repeat 10px 10px;
+	overflow: hidden;
+	display: none;
+}
+
+#logo {
+	font-size: 14px;
+	font-weight: bold;
+	font-style: italic;
+	padding: 21px 10px 10px 90px;
+	float: left;
+}
+
+#actions {
+	max-width: 500px;
+	margin: auto;
+	text-align: center;
+	padding-top: 21px;
+	font-weight: bold;
+}
+
+#level {
+	font-weight: bold;
+	float: right;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+#level span {
+	font-size: 24px;
+	padding-right: 10px;
+}
+
+#theBonus {
+	color: #ff0;
+	text-shadow: 0 0 10px #ff0;
+}
+
+.threeD {
+	text-shadow: 0 0 10px #fff;
+}
+
+#introWrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #000;
+}
+
+#introWrapper #intro {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	text-align: center;
+	width: 500px;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: bold;
+	font-style: italic;
+	padding: 15px 0;
+}
+
+#introWrapper #intro p {
+	margin-bottom: 15px;
+}
+
+#introWrapper #intro a {
+	margin: auto;
+}
+
+#introWrapper #intro img {
+	clear: both;
+}
+
+#intro small {
+	font-size: 10px;
+	line-height: 6em;
+}
+
+#intro small a {
+	color: #ff0;
+	background: none;
+	text-decoration: none;
+	padding: 0;
+}
+
+#sendHighscore, #highscore {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	text-align: center;
+	width: 250px;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: #000;
+	border: 5px solid #333;
+}
+
+#sendHighscore input {
+	margin-bottom: 20px;
+}
+
+
+
+#highscore {
+	width: 500px;
+}
+
+#tweetButton iframe {
+	margin-bottom: 16px;
+}
+
+#highscore table {
+	width: 500px;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+#highscore td {
+	width: 33%;
+}
+
+#highscore .even {
+	background-color: #333;
+}
+
+#highscore .r {
+	float: right;
+}
+
+#highscore td, th {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#highscore th {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+
+a {
+	color: #000;
+	background-color: #fff;
+	text-decoration: none;
+	font-weight: normal;
+	border-radius: 5px;
+	padding: 5px 15px;
+	margin-right: 3px;
+	margin-left: 3px;
+}
+
+a.enter {
+	background-color: #ff0;
+}
+
+a#showHighscore {
+	text-transform: uppercase;
+	font-size: 9px;
+	color: #fff;
+	background: none;
+	padding: 5px 0 5px 20px;
+}
+
+a#showHighscore:hover {
+	text-decoration: underline;
+}
+
+a:hover {
+	background-color: #eee;
+}
+
+#overview {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background-color: #000;
+}
+
+canvas {
+	background-color: #000;
+	margin: 5px;
+}

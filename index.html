@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>lightCycle3D™</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="apple-touch-icon" href="_images/lightcycle_icon.png"/>	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="_js/jquery.touchwipe.min.js"></script>
+	<script src="_js/Three.js"></script>
+	<script src="_js/Detector.js"></script>
+	
+	<!--<script src="shaderExtras/ShaderExtras.js"></script>
+	<script src="shaderExtras/EffectComposer.js"></script>
+	<script src="shaderExtras/MaskPass.js"></script>
+	<script src="shaderExtras/RenderPass.js"></script>
+	<script src="shaderExtras/ShaderPass.js"></script>
+	<script src="shaderExtras/BloomPass.js"></script>-->
+	
+	<script src="_js/soundmanager2-jsmin.js"></script>
+	
+	<script src="_js/lightcycle.js"></script>
+	<!--<script src="_js/lightcycle_shadows-experimental.js"></script>-->
+	
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<link rel="stylesheet" href="_css/reset.css"  />	
+	<link rel="stylesheet" href="_css/style.css"  />	  
+</head>
+<body>
+	
+	<header>
+		<div id="logo">lightCycle<span class='threeD'>3D</span>™<a href="#" id="showHighscore">Show highscores</a></div>
+		<div id="level">
+			<span id="theBonus"></span>
+			Score: <span id="theScore"></span>
+			Level: <span id="theLevel"></span>
+		</div> 
+		<div id="actions"></div> 
+	</header>
+	<div id="introWrapper">
+		<div id="intro">
+			<img src="_images/lightCycle.png" alt="lightCycle" width="332" height="169" />
+			<h1>lightCycle<span class='threeD'>3D</span>™</h1>
+			<p>Use arrow keys or swipe to steer your yellow bike through the ten levels.<br />
+			Hint: Use enter key to click buttons when things get hectic, or use space key to pause!	M key mutes sounds.
+			</p>
+			<a href="#" class="enter">Play game</a>
+			<p><small>Code by <a href="https://twitter.com/#!/mauleDigitaul">@mauleDigitaul</a>, logo by <a href="https://twitter.com/#!/olaolsson">@olaolsson</a>, music by <a href="https://twitter.com/#!/samuellarsson">@samuellarsson</a>. Built on <a href="https://github.com/mrdoob/three.js/">three.js</a>.</small></p>
+		</div>
+	</div>
+	<div id="sendHighscore">
+		<p>Enter your name:<br />
+		<input type="text" name="name" maxlength="15" value="" id="playerName">
+		</p>
+		<p id="tweetButton"></p>
+		<a href="#">Post highscore</a>
+	</div>
+	<div id="highscore">
+		<h1>Highscores:</h1>
+		<p>
+		</p>
+		<a href="#">Close</a>
+	</div>
+	
+	<div id="maze"></div>
+	<canvas id="overview" width="200px" height="100px"></canvas>
+	<!--<audio src="disco.mp3" autoplay loop></audio>-->
+	
+		
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-1567055-1");
+	pageTracker._trackPageview();
+	} catch(err) {}</script>
+	
+</body>
+</html>

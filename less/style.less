@@ -1,0 +1,85 @@
+@basefont: 14px e('/')21px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+html {
+	background-color: #000;
+	font: @basefont;
+	color: white;
+	overflow: hidden;
+}
+body {
+	background-color: #333;
+}
+
+header {
+	height:55px;
+	background: url(../_images/headerbg.png) no-repeat 10px 10px;
+	overflow: hidden;
+	padding-left: 90px;
+}
+
+#logo {
+	font-size: 14px;
+	font-weight: bold;
+	font-style: italic;
+	padding: 20px 10px;
+	float: left;
+}
+
+#score {
+	float: right;
+	padding: 16px 10px;
+	font-weight: bold;
+	span {
+		margin-left: 20px;
+	}
+
+	strong {
+		font-size: 24px;
+	}
+}
+#introWrapper {
+	position: fixed;
+	top:0;
+	left:0;
+	background-color: #000;
+	#intro {
+		position: fixed;
+		top:0;
+		left:0;
+		text-align: center;
+		width: 332px;
+		h1 {
+			font-size: 30px;
+			font-weight: bold;
+			font-style: italic;
+			padding:15px 0;
+		}
+		p {
+			margin-bottom: 15px;
+		}
+		a {		
+			margin: auto;
+		}
+		img {
+			clear: both;
+		}
+	}
+}
+
+
+a{	
+	color: #000;
+	background-color:#ff0;
+	text-decoration: none;
+	font-weight: normal;
+	border-radius: 5px;
+	padding: 5px 15px; 
+	margin: 0 10px;
+	&:hover{
+		background-color:#fff;
+	}
+}
+
+canvas {
+	background-color: #000;
+	margin:5px;
+}
